@@ -1,0 +1,13 @@
+FROM node:alpine AS development
+
+ENV NODE_ENV=development
+
+WORKDIR /app
+
+COPY display-screen/package*.json display-screen/package-lock.json ./
+
+RUN npm install
+
+COPY display-screen/. .
+
+CMD ["npm", "start"]

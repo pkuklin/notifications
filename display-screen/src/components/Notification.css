@@ -1,0 +1,25 @@
+.notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 9px;
+
+    &.info {
+        border: 1px solid blue;
+    }
+
+    &.warning {
+        border: 1px solid yellow;
+    }
+
+    &.error {
+        border: 1px solid red;
+    }
+}
+
+.message {
+    font-weight: 600;
+}
